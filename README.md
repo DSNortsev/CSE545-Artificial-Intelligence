@@ -57,3 +57,4 @@ In this course we will be solving The Travelling Salesman Problems (TSP) with di
 Reach out to me at one of the following places!
 
 - LinkedIn at <a href="https://www.linkedin.com/in/dmitry-nortsev-699975b2/" target="_blank">`@dmitry_nortsev`</a>
+- Email to [dmitry.nortsev@gmail.com](mailto:dmitry.nortsev@gmail.com)
