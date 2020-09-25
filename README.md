@@ -21,7 +21,6 @@ In this course we will be solving The Travelling Salesman Problems (TSP) with di
 &nbsp;&nbsp;&nbsp;&nbsp;In this project we will review The Travelling Salesman Problem (TSP). The TSP is a problem in Computer Science used to demonstrate intractability and optimization. In short, imagine a salesman who wishes to visit every one of N cities exactly once each. For salesman it does not matter which order he visits the cities as he is equally proficient in applying is selling skills in them all regardless. All that matters is that he takes the shortest route between them all before returning back to the start. This kind of problem is also known as Hamiltonian Cycle to find the minimum weight. 
 <br></br>
 &nbsp;&nbsp;&nbsp;&nbsp;We would run python code that would demonstarte a TSP simulation and attempt to solve the problem by Brute Force. The Brute Force algorithms is a straightforward method of solving a problem that rely on sheer computer power that will go through all possible solution extensively. A Brute Force solution is 100% possible for only 25 cities which is approximately 15.5 septillion unique permutation, which would make it impossible to find the global optimal solution for large dataset 
-<br></br>
 </p>
 
 ### Result
@@ -45,6 +44,18 @@ In this course we will be solving The Travelling Salesman Problems (TSP) with di
 </p>
 
 ## Project 2: TSP search with BFS and DFS
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project2/Project2.ipynb)
+
+### Introduction
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp; In the second project we will review Breadth First Search (BFS) and Depth First Search (DFS) algorithms for Traveling Sale Person (TSP).  We will have two input data the start city and the goal city, where we need to find the shortest path with minimum cost.  BFS is one of the most commonly used approach where you start traversing from the selected node ( source or starting node) and traverse the graph layer wise by exploring neighbor nodes ( nodes that are directly connected to the source node) and keep moving toward the next level  neighbor nodes until the goal node is reached. DFS is an algorithm for searching a graph or tree data structure by starting at the root node and goes as far as it can down a given path, then backtracks until it finds an unexplored path, and then explores it. The algorithm does this until the entire graph is explored and then returns the shortest path. 
+</p>
+
+### Result
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;For this experiment, we have analyzed the performance of BFS and DFS algorithm. The total execution time of DFS is 667 μs where BFS algorithm has been completed in 349 µs. We can see that  that the running time of the BFS algorithms almost twice lower for particular scenario because the shortest path exists in 4th layers of the tree. We can conclude that BFS is more suitable for searching goal node that are closer to the source node where DFS would perform better when the shortest path is far away from the goal node. 
+</p>
 
 ## Project 3: TSP with Closest Edge Insertion Heuristic
 
