@@ -5,14 +5,23 @@
 
 In this course we will be solving The Travelling Salesman Problems (TSP) with different algorithms. 
 
----
+#### Languages and Tools:
+[<img align="left" alt="Python" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" />][python]
+[<img align="left" alt="Jupyter Notebook" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jupyter-notebook/jupyter-notebook.png" />][jupyter_notebook]
+[<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />][git]
+ 
+</br>
+</br>
 
+---
 ## List of projects:
 
 - [Project 1: TSP with Brute Force](#project-1-tsp-with-brute-force)
 - [Project 2: TSP search with BFS and DFS](#project-2-tsp-search-with-bfs-and-dfs)
 - [Project 3: TSP with Closest Edge Insertion Heuristic](#project-3-tsp-with-closest-edge-insertion-heuristic)
 - [Project 4: TSP with Genetic Algorithm](#project-4-tsp-with-genetic-algorithm)
+
+
 
 
 ## Project 1: TSP with Brute Force
@@ -94,7 +103,7 @@ The best tour for TSP with 40 nodes:
 
 ```shell
 [7, 24, 1, 30, 15, 39, 40, 10, 8, 16, 11, 18, 38, 29, 20, 6, 25, 13, 31, 33, 4, 35, 26, 5, 9, 27,
- 22, 14, 2, 12, 37, 36, 34, 28, 32, 19, 3, 21, 23, 17, 7].
+ 22, 14, 2, 12, 37, 36, 34, 28, 32, 19, 3, 21, 23, 17, 7]
 ```
 
 ![40 Nodes](https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project3/40nodes.gif)
@@ -121,6 +130,11 @@ The best tour for TSP with 40 nodes:
 [<img align="left" alt="Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 [<img align="left" alt="gmail" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.9.0/icons/gmail.svg" />][gmail]
 
+<br />
+
 [instagram]: https://www.instagram.com/dmitry_nortsev/
 [linkedin]: https://www.linkedin.com/in/dmitry-nortsev-699975b2/
 [gmail]: mailto:dmitry.nortsev@gmail.com
+[python]: https://www.python.org/
+[jupyter_notebook]: https://jupyter.org/
+[git]: https://git-scm.com/book/en/v2
