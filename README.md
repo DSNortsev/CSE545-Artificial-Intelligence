@@ -124,9 +124,9 @@ The best tour for TSP with 40 nodes:
 
 ### Connect with me:
 
-[<img align="left" alt="linkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-[<img align="left" alt="gmail" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.9.0/icons/gmail.svg" />][gmail]
+[<img align="left" alt="linkedIn" width="22px" src="https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/assets/icons/linkedin.png" />][linkedin]
+[<img align="left" alt="Instagram" width="22px" src="https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/assets/icons/instagram.png" />][instagram]
+[<img align="left" alt="gmail" width="22px" src="https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/assets/icons/gmail.png" />][gmail]
 
 <br />
 
