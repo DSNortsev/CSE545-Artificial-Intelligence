@@ -115,10 +115,12 @@ The best tour for TSP with 40 nodes:
 
 
 
+### Connect with me:
 
-## Support
+[<img align="left" alt="linkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+[<img align="left" alt="gmail" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.9.0/icons/gmail.svg" />][gmail]
 
-Reach out to me at one of the following places!
-
-- LinkedIn at <a href="https://www.linkedin.com/in/dmitry-nortsev-699975b2/" target="_blank">`@dmitry_nortsev`</a>
-- Email to [dmitry.nortsev@gmail.com](mailto:dmitry.nortsev@gmail.com )
+[instagram]: https://www.instagram.com/dmitry_nortsev/
+[linkedin]: https://www.linkedin.com/in/dmitry-nortsev-699975b2/
+[gmail]: mailto:dmitry.nortsev@gmail.com
