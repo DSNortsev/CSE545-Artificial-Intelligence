@@ -1,5 +1,8 @@
 # CSE545-Artificial-Intelligence
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSNortsev/CSE545-Artificial-Intelligence)
+
+
 In this course we will be solving The Travelling Salesman Problems (TSP) with different algorithms. 
 
 ---
@@ -28,6 +31,7 @@ In this course we will be solving The Travelling Salesman Problems (TSP) with di
 &nbsp;&nbsp;&nbsp;&nbsp;For this experiment, we have analyzed the performance of Brute Force algorithm with different TSP files that contains different number of cities with the range from 4 to 12. Each city record has “x” and “y” coordinates, then we used the Euclidian distance formula to find the  distance between two cities. We also found all possible premutation, other word all possible variations of tours. Then we calculated the total cost of each tour and the tour with minimum cost has been chosen. The computation power of my laptop was  not enough to find the best tour with the dataset of 12 cities due to kernel crash. 
 </p>
 
+
 | Total cities  | Running Time  |
 | :------------:| -------------:|
 |       4       |    24.6 ms    |  
@@ -38,6 +42,8 @@ In this course we will be solving The Travelling Salesman Problems (TSP) with di
 |       9       |     1.97 s    |
 |      10       |     21.1 s    |
 |      11       |  4 min 32 s   |
+
+
 
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;By looking at the table above, we can conclude that the Brute Force search to TSP has the runtime complexity of  O(n!), which means each time N ( number of cities) is incremented, the runtime is multiplied by N. For example the number of tours for N=4 is 4*3*2*1 = 24, 11! = 39916800. This algorithm would only work for small datasets, in order to be able to find best route for large dataset,  this algorithm needs to be optimized. 
@@ -59,7 +65,54 @@ In this course we will be solving The Travelling Salesman Problems (TSP) with di
 
 ## Project 3: TSP with Closest Edge Insertion Heuristic
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project3/project3.ipynb)
+
+### Introduction
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;For the third project, we will demonstarte a TSP simulation to solve TSP problem by Closest Edge Insertion Algorithm . The Closest Edge Insertion is a straightforward method  with computational complexity O(n^2). The main idea of this algorithm is to start from tour of the two closest cities, repeatedly choose the non-tour city with the minimum distance to its nearest neighbor among the tour city , and insert it in between the two consecutive tour cities for which such an insertion causes the minimum increase in total tour length.
+</p>
+
+### Result
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;For this experiment, we have analyzed the performance of Closest Edge Insertion algorithm with two TSP files that contains 30 and 40 cities. Each city record has “x” and “y” coordinates, then we used the Euclidian distance formula to find the  distance between two cities. Then we have built a list of completed tours (that has a cycle) by adding one city to the graph and calculate the total cost of the final tour.  Since the first city has been chosen randomly the total cost of the final tour is different every time the program runs. 
+<br></br>
+The best tour for TSP with 30 cities where the first city has been chosen randomly:
+<br></br>
+</p>
+
+```shell
+[23, 17, 2, 14, 22, 27, 9, 5, 26, 12, 18, 4, 13, 25, 6, 20, 29, 11, 16, 10, 8, 15, 30, 1, 24,
+ 7, 21, 3, 19, 28, 23]
+```
+
+![30 Nodes](https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project3/30nodes.gif)
+
+<p>
+The best tour for TSP with 40 nodes:
+<br></br>
+</p>
+
+```shell
+[7, 24, 1, 30, 15, 39, 40, 10, 8, 16, 11, 18, 38, 29, 20, 6, 25, 13, 31, 33, 4, 35, 26, 5, 9, 27,
+ 22, 14, 2, 12, 37, 36, 34, 28, 32, 19, 3, 21, 23, 17, 7].
+```
+
+![40 Nodes](https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project3/40nodes.gif)
+
+
+| Total cities  | Running Time  | Total cost |
+| :------------:| -------------:| ----------:|
+|       30      |    9.02 ms    |    497.1   |
+|       40      |   20.08 ms    |   632.15   |
+
+
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;From the table above, we can see that the running time is doubled by adding 10 nodes to the graph which is still much faster than the Brute Force search algorithms  from the project 1 where it takes 4 minutes and 32 seconds to find the optimal path. 
+</p>
+
 ## Project 4: TSP with Genetic Algorithm
+
+
 
 
 
@@ -68,4 +121,4 @@ In this course we will be solving The Travelling Salesman Problems (TSP) with di
 Reach out to me at one of the following places!
 
 - LinkedIn at <a href="https://www.linkedin.com/in/dmitry-nortsev-699975b2/" target="_blank">`@dmitry_nortsev`</a>
-- Email to [dmitry.nortsev@gmail.com](mailto:dmitry.nortsev@gmail.com)
+- Email to [dmitry.nortsev@gmail.com](mailto:dmitry.nortsev@gmail.com )
