@@ -11,9 +11,7 @@ In this course we will be solving The Travelling Salesman Problems (TSP) with di
 [<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />][git]
  
 </br>
-</br>
 
----
 ## List of projects:
 
 - [Project 1: TSP with Brute Force](#project-1-tsp-with-brute-force)
