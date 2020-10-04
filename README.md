@@ -117,9 +117,22 @@ The best tour for TSP with 40 nodes:
 &nbsp;&nbsp;&nbsp;&nbsp;From the table above, we can see that the running time is doubled by adding 10 nodes to the graph which is still much faster than the Brute Force search algorithms  from the project 1 where it takes 4 minutes and 32 seconds to find the optimal path. 
 </p>
 
+
 ## Project 4: TSP with Genetic Algorithm
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project4/project4.ipynb)
 
+```shell
+The best route: [48, 65, 88, 22, 67, 27, 9, 82, 57, 44, 80, 58, 5, 42, 14, 50, 78, 62, 59, 31, 84, 29,
+56, 13, 25, 40, 6, 60, 98, 20, 79, 81, 18, 12, 21, 3, 53, 19, 23, 94, 83, 92, 1, 41, 39, 66, 38,37, 71,
+24, 36, 75, 74, 7, 89, 85, 73, 95, 15, 68, 43, 30, 72, 10, 90, 99, 46, 34, 86, 17, 93, 70, 16, 11, 69,
+47, 4, 64, 33, 51, 8, 54, 97, 35, 26, 77, 76, 100, 52, 45, 61, 28, 32, 63, 91, 55, 96, 49, 87, 2, 48]
+
+Total cost: 1209.35
+Total number generations: 1923
+```
+
+![100 Nodes](https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project4/genetic_algorithm.gif)
 
 
 ### Connect with me:
