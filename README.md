@@ -135,6 +135,11 @@ Total number generations: 1923
 ![100 Nodes](https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project4/genetic_algorithm.gif)
 
 
+Final solution: 
+
+![100 Nodes](https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project4/graphs/project_4_143.png)
+
+
 ### Connect with me:
 
 [<img align="left" alt="linkedIn" width="22px" src="https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/assets/icons/linkedin.png" />][linkedin]
