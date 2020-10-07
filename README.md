@@ -122,23 +122,61 @@ The best tour for TSP with 40 nodes:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project4/project4.ipynb)
 
-```shell
-The best route: [48, 65, 88, 22, 67, 27, 9, 82, 57, 44, 80, 58, 5, 42, 14, 50, 78, 62, 59, 31, 84, 29,
-56, 13, 25, 40, 6, 60, 98, 20, 79, 81, 18, 12, 21, 3, 53, 19, 23, 94, 83, 92, 1, 41, 39, 66, 38,37, 71,
-24, 36, 75, 74, 7, 89, 85, 73, 95, 15, 68, 43, 30, 72, 10, 90, 99, 46, 34, 86, 17, 93, 70, 16, 11, 69,
-47, 4, 64, 33, 51, 8, 54, 97, 35, 26, 77, 76, 100, 52, 45, 61, 28, 32, 63, 91, 55, 96, 49, 87, 2, 48]
+### Introduction
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;Genetic Algorithms(GAs) are adaptive heuristic search algorithms that belong to the larger part of evolutionary algorithms. Genetic algorithms are based on the ideas of natural selection and genetics. Generally, GA is composed of two processes. The first process is selection of individuals for the production of the next generation and the second process is manipulation of the selected individuals to form the next generation by crossover and mutation techniques. The selection mechanism determines which individuals are chosen for mating (reproduction) and how many offspring each selected individual produces. The main principle of selection strategy is “the better is an individual; the higher is its chance of being parent.” Generally, crossover and mutation explore the search space, whereas selection reduces the search area within the population by discarding poor solutions. However, worst individuals should not be discarded and they have some chances to be selected because it may lead to useful genetic material. A good search technique must find a good trade-off between exploration and exploitation in order to find a global optimum [1]. Hence, it is important to find a balance between exploration (i.e. poor solutions must have chance to go to the next generation) and exploitation (i.e. good solutions go to the next generation more frequently than poor solutions) within the mechanism of the selection.
+</p>
 
-Total cost: 1209.35
-Total number generations: 1923
+### Approach
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;For this project, we have analyzed the performance of Genetic Algorithm with a TSP file that contains different 100. Each city record has “x” and “y” coordinates, then we used the Euclidian distance formula to find the  distance between two cities. First step in Genetic Algorithm is to generate a random population meaning create different combination of tours and use fitness function to find the total cost of each tour. Then, Selection method can be applied, we have decided to select 30% of population  with the highest rank (tours with the minimum cost), and select 70% of tours randomly with the highest probabilities of best routes. After selection step is completed,  then Crossover method can be applied. In this project, we have decided to use three different methods such as order crossover, maximal preservation crossover and partial mapped crossover. 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The order crossover (OX)  builds offspring by choosing a subtour of a parent and preserving the relative order of bits of the other parent. The partially mapped crossover (PMX) is choosing two random cut points on parents to build offspring, the portion between cut points, one parent’s string is mapped onto the other parent’s string and the remaining information is exchanged. The  maximal preservation crossover (MPX) operator is closely related to the PMX crossover operator. MPX operates by initially selecting a random substring from the first parent. This subtour is usually defined as being a tour with string length less than or equal to the TSP problem size n divided by 2. The second stage of MPX is to remove the elements currently in the offspring from the second parent. Then the remaining elements are inserted into the offspring, the first parent’s substring having been placed at the start of the offspring and the remaining free elements of the offspring being filled by the clean parent 2 strings. [2]
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The third step in Genetic Algorithm is a mutation. Mutation serves an important function in GA, as it helps to avoid local convergence by introducing novel routes that will allow to explore other parts of the solution space. Similar to crossover, the TSP has a special consideration when it comes to mutation, in our project we will be using the following methods such as  swap, insertion and displacement. Insertion Mutation selects a city at random and inserts it at random position. Displacement Mutation selects a sub tour at random and inserts it at a random position outside the sub tour. Insertion can be viewed as a special case of displacement in which the substring contains only one city. Swap mutation selects two positions at random and swaps the cities on these positions. [3]
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;All above steps such as Ranking, Selection, Crossover and Mutation need to be repeated until algorithm reaches the result that meets the stopping criteria. In our project, the stopping criteria  is when an algorithm cannot find a better route in 50 consecutive generations. 
+</p>
+
+### Results
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;For our experiment, we have run genetic algorithm 4 times with different  combination of crossover and mutation methods with 100 population size and 50 generation without improvement before terminating. Also, we have decide to use 0.9 crossover rate and 0.1 mutation rate which is one of the most common practice.
+<br>
+</p>
+
+```shell
+The best route: [64, 35, 29, 25, 6, 60, 81, 79, 68, 30, 73, 89, 74, 83, 10, 90, 16, 99, 
+70, 93, 86, 46, 34, 61, 55, 96, 100, 52, 28, 32, 63, 91, 19, 53, 23, 39, 41, 3, 21, 66,
+38, 37, 36, 7, 75, 17, 94, 85, 24, 71, 1, 92, 72, 43, 95, 15, 20, 98, 40, 13, 56, 33, 97,
+51, 54, 8, 69, 11, 12, 87, 2, 67, 27, 9, 82, 44, 80, 58, 42, 5, 57, 78, 88, 22, 45, 65,
+48, 76, 14, 50, 62, 26, 77, 49, 47, 18, 4, 59, 31, 84, 64]
+
+Total cost: 1060.45
+Total number generations: 1097
 ```
 
-![100 Nodes](https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project4/genetic_algorithm.gif)
-
+![100 Nodes gif](https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project4/genetic_algorithm.gif)
 
 Final solution: 
 
-![100 Nodes](https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project4/graphs/project_4_143.png)
+![100 Nodes](https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project4/graphs/project_4_135.png)
+![Performance](https://github.com/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project4/project_4_performance.png)
 
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;After plotting the performance of Genetic Algorithm, we can see that after 300 - 400 generations there is no much improvements, the best result we have received  in 1097 generation which takes 3 times longer. It might not be reasonable to run for so many generation and get a better result, because it would require much more computational power. We can also notice that not every generation give a better solution, sometimes the new generation performs worse than previous generation, but the overall tendency is performance increases throughout many generations.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;In conclusion, the genetic algorithm is useful for NP-hard problems,  but it does depend on selection criteria, crossover and mutation operation. This algorithm  can be improved by not selecting the first population randomly instead  Dijkstra's Algorithm (with time complexity O (ElgV) ) cab be applied and then Genetic Algorithm can be used to find the shortest path. In that case, the total number of generations would decrease  because at the starting point there is some routes with better total cost, which random solution does not guarantee it. 
+<br>
+</p>
+
+### References
+<p align="justify">
+[1]  Noraini Mohd Razali, John Geraghty, “Genetic Algorithm Performance with Different Selection Strategies in Solving TSP”, the World Congress on Engineering 2011, Accessed July 8, 2011
+<br>
+[2] A.J. Umbarkar1,P.D. Sheth, “Crossover operations in Genetic Algorithm: A Review”, ICTACT journal on soft computing, Accessed October, 2015
+<br>
+[3] Kusum Deep, Hadush Mebrathu, “Combined Mutation Operators of Genetic Algorithm for the Travelling Salesman Problem”, International Journal of Combinatorial Optimization Problems and Informatics, Accessed December, 2011
+</p>
 
 ### Connect with me:
 
