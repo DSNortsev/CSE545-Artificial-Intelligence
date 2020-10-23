@@ -18,7 +18,7 @@ In this course we will be solving The Travelling Salesman Problems (TSP) with di
 - [Project 2: TSP search with BFS and DFS](#project-2-tsp-search-with-bfs-and-dfs)
 - [Project 3: TSP with Closest Edge Insertion Heuristic](#project-3-tsp-with-closest-edge-insertion-heuristic)
 - [Project 4: TSP with Genetic Algorithm](#project-4-tsp-with-genetic-algorithm)
-
+- [Project 5: TSP GA with Wisdom of Artificial Crowds](#project-5-tsp-ga-with-wisdom-of-artificial-crowds)
 
 
 
@@ -177,6 +177,10 @@ Final solution:
 <br>
 [3] Kusum Deep, Hadush Mebrathu, “Combined Mutation Operators of Genetic Algorithm for the Travelling Salesman Problem”, International Journal of Combinatorial Optimization Problems and Informatics, Accessed December, 2011
 </p>
+
+## Project 5: TSP GA with Wisdom of Artificial Crowds
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSNortsev/CSE545-Artificial-Intelligence/blob/master/Project5/project5.ipynb)
 
 ### Connect with me:
 
